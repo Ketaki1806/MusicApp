@@ -1,0 +1,105 @@
+.bg{
+    align-items: center;
+}
+.nav{
+    margin-top: 20px;
+}
+.name_logo{
+    display: flex;
+}
+.logo{
+    margin-left: 20px;
+    width: 5%;
+}
+.name{
+    margin-top: 5px;
+    margin-left: 20px;
+    font-size: 30px;
+    font-weight: 500;
+    width: 30%;
+}
+/* .box{
+    margin-left: 20px;
+    background-color: crimson;
+    width: 30%;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+} */
+.box{
+    margin-left: 20px;
+    position: relative;
+    width: 30%;
+    height: 42px;
+    border: 4px solid black;
+    padding: 0px 10px;
+    border-radius: 50px;
+  }
+  .element{
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+  }
+  .search{
+    border: none;
+    height: 100%;
+    width: 100%;
+    padding: 0px 5px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .search:focus{
+    outline: none;
+  }
+  .material-icons{
+    font-size: 25px;
+  }
+.dropdown{
+    margin-left: 20px;
+    background-color: blueviolet;
+    width: 20%;
+    padding: 5px;
+    width: fit-content;
+    align-items: center;
+    text-align: center;
+}
+.dropdown p{
+    margin-top: 10px;
+}
+@media (max-width:600px) {
+    .logo{
+        display: none;
+    }
+    .name{
+        width:100%;
+        padding-left: 90px;
+    }
+    .box{
+        margin-left: 45px;
+        width: 50%;
+    }
+    .dropdown{
+        width: 25%;
+    }
+}
+.play_pause{
+    height: 50px;
+    margin: 10px;
+    width: 98%;
+    padding: 5px;
+    position: fixed;
+    bottom: 0px;
+    background-color: chartreuse;
+}
+.songs{
+    margin-top: 50px;
+}
+.card-style{
+    margin: 5px;
+}
+@media (max-width:600px) {
+    .songs{
+        margin-top: 0px; 
+    }
+}

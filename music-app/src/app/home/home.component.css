@@ -1,6 +1,6 @@
 .bg{
     background-color: steelblue;
-    background-image: url(2.jpg);
+    background-image: url(/assets/2.jpg);
     background-size: 100% 100%;
     position: absolute;
     background-size:cover; 
@@ -40,6 +40,7 @@ footer{
 }
 .searchBox {
     position:absolute;
+    max-width: 500px;
     background: #2f3640;
     height: 40px;
     border-radius: 40px;
