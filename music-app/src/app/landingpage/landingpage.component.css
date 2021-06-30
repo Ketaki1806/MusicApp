@@ -18,14 +18,6 @@
     font-weight: 500;
     width: 30%;
 }
-/* .box{
-    margin-left: 20px;
-    background-color: crimson;
-    width: 30%;
-    align-items: center;
-    text-align: center;
-    padding: 5px;
-} */
 .box{
     margin-left: 20px;
     position: relative;
@@ -33,9 +25,10 @@
     height: 42px;
     border: 4px solid black;
     padding: 0px 10px;
-    border-radius: 50px;
+    border-radius: 50px;    
+    background-color: white;
   }
-  .element{
+  .search_element{
     width: 100%;
     height: 100%;
     vertical-align: middle;
@@ -55,18 +48,7 @@
   .material-icons{
     font-size: 25px;
   }
-.dropdown{
-    margin-left: 20px;
-    background-color: blueviolet;
-    width: 20%;
-    padding: 5px;
-    width: fit-content;
-    align-items: center;
-    text-align: center;
-}
-.dropdown p{
-    margin-top: 10px;
-}
+
 @media (max-width:600px) {
     .logo{
         display: none;
@@ -83,15 +65,7 @@
         width: 25%;
     }
 }
-.play_pause{
-    height: 50px;
-    margin: 10px;
-    width: 98%;
-    padding: 5px;
-    position: fixed;
-    bottom: 0px;
-    background-color: chartreuse;
-}
+
 .songs{
     margin-top: 50px;
 }
@@ -101,5 +75,95 @@
 @media (max-width:600px) {
     .songs{
         margin-top: 0px; 
+        width: 60%;
+        margin-left: 80px;
     }
+}
+@media(max-width:400px) {
+    .songs{
+        margin-left: 40px;
+        width: 80%;
+    }
+}
+/* --------------------------- Dropdwon menu------------------------------------------------------- */
+.dropdown{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button{
+    background: black;
+    padding: 8px 20px;
+    margin-left: 10px;
+    width: 100px;
+    height: 50px;
+    display: flex;
+    justify-content:space-around;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.bar{
+    width:50%;
+    height: 2px;
+    background-color: antiquewhite;
+    border-radius: 10px;
+}
+.fas:hover:before{
+    content: '\f00d';
+}
+ul{
+    display: none;
+    list-style: none;
+    position: absolute;
+    /* display: flex; */
+    flex-direction: column;
+    background: black;
+    width: max-content;
+    top: 65px;
+    text-align: left;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0,0.3);
+}
+.active{
+    display: flex;
+}
+ul li{
+    line-height: 35px;
+    padding: 8px 8px;
+    border: 1px solid transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.11);
+}
+ul li:last-child{
+    border-bottom: none;
+}
+ul li:hover{
+    box-shadow: inset 0 0 5px cyan;
+}
+ul li a{
+    color: white;
+    text-decoration: none;
+}
+/* ---------------Play songs-------- */
+.play_pause{
+    height: 50px;
+    margin: 10px;
+    width: 98%;
+    padding: 5px;
+    position: fixed;
+    bottom: 0px;
+    background-color: black;
+    border-radius: 50px;
+    color: white;
+}
+.song_name{
+    text-align: left;
+    vertical-align: middle;
+
 }

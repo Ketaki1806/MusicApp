@@ -5,19 +5,31 @@
             <h2 class="name">Name Surname</h2>
         </div>
         <div class="box">
-            <table class="element">
+            <table class="search_element">
                 <tr>
                     <td>
                         <input type="text" placeholder="Search" class="search">
                     </td>
                     <td>
-                        <a href="#"><i class="material-icons">search</i></a>
+                        <a href="#"><i class="material-icons" style="color: black; margin-top: 3px;">search</i></a>
                     </td>
                 </tr>
             </table>
         </div>
-        <div class="dropdown">
-            <p>dropdown</p>
+        <div class = "dropdown">
+            <div class="menu">
+                <div class="button" id = "bar_btn">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul id = "list" style="z-index: 1;">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Playlist</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </div>
         </div>
     </div>
     <div class="songs">
@@ -62,6 +74,34 @@
         </div>
     </div>
     <div class="play_pause">
-        <p>Play</p>
+        <span class = "song_name">Song name</span>
+        <a href="#"><i class="material-icons" style="color: white;">
+            favorite
+        </i></a>
+        <a href="#">
+            <span class="material-icons" style="color: white;">
+                skip_previous
+            </span>
+        </a>
+        <a href="#">
+            <span class="material-icons" style="color: white;">
+                play_arrow
+                </span>
+        </a>
+        <a href="#">
+            <span class="material-icons" style="color:white">
+                pause
+                </span>
+        </a>
+        <a href="#">
+            <span class="material-icons"style="color: white;">
+                skip_next
+                </span>
+        </a>
+        <a href="#">
+            <span class="material-icons" style="color: white;">
+                queue_music
+                </span>
+        </a>
     </div>
 </div>
